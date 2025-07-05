@@ -1,0 +1,23 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/classical-models-test/runs/1150zel7
+--- Selected Logistic Regression.
+--- Training LogisticRegression ...
+Error during Logistic Regression test: A given column is not a column of the dataframe
+
+--- Running Random Forest Test ---
+
+ --- Training RandomForestClassifier Model --
+Initializing W&B run: Project='classical-models-test', Run='RandomForestClassifier-dummy-test'
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/classical-models-test/runs/1150zel7
+--- Selected Random Forest Classifier.
+--- Training RandomForestClassifier ...
+Error during Random Forest test: A given column is not a column of the dataframe
+
+--- Running SVC Test (may be slow) ---
+
+ --- Training SVC Model --
+Initializing W&B run: Project='classical-models-test', Run='SVC-dummy-test'
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/classical-models-test/runs/1150zel7
+Error during SVC test: Unknown model_name: SVC
+SVC can be very slow on larger datasets or with complex kernels. Consider reducing data size or using LinearSVC for large datasets.

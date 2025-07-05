@@ -1,0 +1,6 @@
+2025-07-04 17:31:52,008 INFO    MainThread:48957 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/wandb/run-20250704_173152-de2jexyp/logs/debug.log
+2025-07-04 17:31:52,008 INFO    MainThread:48957 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/wandb/run-20250704_173152-de2jexyp/logs/debug-internal.log
+2025-07-04 17:31:52,008 INFO    MainThread:48957 [wandb_init.py:init():830] calling init triggers
+2025-07-04 17:31:52,008 INFO    MainThread:48957 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'model_type': 'SVC', 'kernel': 'linear', 'class_weight': 'balanced', '_wandb': {}}
+2025-07-04 17:31:52,163 INFO    MsgRouterThr:48957 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

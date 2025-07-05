@@ -9,7 +9,7 @@ import os
 
 
 from src.evaluation import evaluate_classification_model
-from src.wandb_utils import log_wandb_metrics, log_wandb_artifact, initialize_wandb_run, finish_wandb_run
+from wandb_utils import log_wandb_metrics, log_wandb_artifact, initialize_wandb_run, finish_wandb_run
 
 
 def train_classical_model(
@@ -111,7 +111,6 @@ def train_classical_model(
         artifact_name = f"{model_name}_Pipeline",
         artifact_type="model",
         file_path=model_path,
-        file_path = model_path,
         description= f"Trained scikit-learn pipeline for {model_name}"
     )
     

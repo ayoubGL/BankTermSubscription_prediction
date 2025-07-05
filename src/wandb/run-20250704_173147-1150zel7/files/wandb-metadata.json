@@ -1,0 +1,17 @@
+{
+  "os":  "macOS-15.3.1-x86_64-i386-64bit",
+  "python":  "CPython 3.11.13",
+  "startedAt":  "2025-07-04T15:31:47.447457Z",
+  "program":  "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/classical_models.py",
+  "codePath":  "src/classical_models.py",
+  "codePathLocal":  "classical_models.py",
+  "git":  {
+    "remote":  "https://github.com/ayoubGL/BankTermSubscription_prediction.git",
+    "commit":  "3ee1d2bb7b2caaf2d430f4c6aeb2c136495840cf"
+  },
+  "email":  "ayoubelma549@gmail.com",
+  "root":  "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src",
+  "host":  "fvfgh3kyq05p.klientdrift.uib.no",
+  "executable":  "/opt/anaconda3/envs/myven/bin/python",
+  "writerId":  "du8ub21hqqc1ya85rmuq5t1c4gt02mzt"
+}

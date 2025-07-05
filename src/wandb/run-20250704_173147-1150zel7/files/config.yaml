@@ -1,0 +1,42 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            du8ub21hqqc1ya85rmuq5t1c4gt02mzt:
+                codePath: src/classical_models.py
+                codePathLocal: classical_models.py
+                email: ayoubelma549@gmail.com
+                executable: /opt/anaconda3/envs/myven/bin/python
+                git:
+                    commit: 3ee1d2bb7b2caaf2d430f4c6aeb2c136495840cf
+                    remote: https://github.com/ayoubGL/BankTermSubscription_prediction.git
+                host: fvfgh3kyq05p.klientdrift.uib.no
+                os: macOS-15.3.1-x86_64-i386-64bit
+                program: /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/classical_models.py
+                python: CPython 3.11.13
+                root: /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src
+                startedAt: "2025-07-04T15:31:47.447457Z"
+                writerId: du8ub21hqqc1ya85rmuq5t1c4gt02mzt
+        m: []
+        python_version: 3.11.13
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 13
+                - 16
+                - 24
+            "4": 3.11.13
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": darwin-x86_64
+class_weight:
+    value: balanced
+model_type:
+    value: LogisticRegression
+solver:
+    value: liblinear

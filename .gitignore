@@ -1,2 +1,6 @@
 *.csv
 models/*
+*.wandb
+*.log
+*.png
+wandb/*

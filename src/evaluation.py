@@ -76,29 +76,29 @@ def evaluate_classification_model(
             plt.show()
             
             
-            if wandb_log:
-                # Log plots to Weights& Biases
-                if wandb.run:
-                    print("Logging plots to Weights & Biases...")
-                    wandb.log({
-                        f"{model_name}_Confusion_Matrix":wandb.Image(fig_cm),
-                        f"{model_name}_ROC_Curve":wandb.Image(fig_roc)
-                    })
-                    plt.close(fig_cm)
-                    plt.close(fig_roc)
-                else:
-                    print("W&B run not active. Skipping plot logging to W&B.")
+        if wandb_log:
+            # Log plots to Weights& Biases
+            if wandb.run:
+                print("Logging plots to Weights & Biases...")
+                wandb.log({
+                    f"{model_name}_Confusion_Matrix":wandb.Image(fig_cm),
+                    f"{model_name}_ROC_Curve":wandb.Image(fig_roc)
+                })
+                plt.close(fig_cm)
+                plt.close(fig_roc)
             else:
-                print("Plotting results skipped.")
+                print("W&B run not active. Skipping plot logging to W&B.")
+        else:
+            print("Plotting results skipped.")
+        
+        if wandb_log:
+            if wandb.run:
+                print("Logging metrics to Weight & Biases ...")
+                wandb.log(metrics)
+            else:
+                print("W&B run not active. Skipping metric logging to W&B.")
             
-            if wandb_log:
-                if wandb.run:
-                    print("Logging metrics to Weight & Biases ...")
-                    wandb.log(metrics)
-                else:
-                    print("W&B run not active. Skipping metric logging to W&B.")
-            
-            return metrics
+        return metrics
 
 
 if __name__ == '__main__':

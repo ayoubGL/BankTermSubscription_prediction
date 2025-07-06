@@ -13,7 +13,7 @@ from wandb_utils import initialize_wandb_run, log_wandb_artifact, log_wandb_metr
 
 
 ## --- 1. Define the Neural Network Architecture
-class BankMarkekingNN(nn.Module):
+class BankMarketingNN(nn.Module):
     def __init__(self, input_dim:int, hidden_layers: list, dropout_rate: float= 0.3):
         """
         Initialize a simple Feed-Forward NN for Binary classification.
@@ -24,7 +24,7 @@ class BankMarkekingNN(nn.Module):
             dropout_rate (float):  Dropout probal for regularization
         """
         
-        super(BankMarkekingNN, self).__init__()
+        super(BankMarketingNN, self).__init__()
         
         
         layers = []
@@ -108,9 +108,9 @@ def train_deeL_model(
     
     # Initialize model
     input_dim = X_Train.shape[1]
-    model = BankMarkekingNN(input_dim= input_dim,
+    model = BankMarketingNN(input_dim= input_dim,
                             hidden_layers=dl_config['hidden_layers'],
-                            dropout_rate=dl_config['hidden_layers']).to(device)
+                            dropout_rate=dl_config['dropout_rate']).to(device)
     
     # Define the loss fct and optimzer
     # BCEWithLogitsLoww combines sigmoid and BCE
@@ -118,16 +118,16 @@ def train_deeL_model(
     # Calculate pos_weight: count_negative/count_positive
     neg_count = (y_train == 0).sum()
     pos_count = (y_train == 1).sum()
-    pos_weight = torch.tensor(neg_count / pos_count, dype=torch.float32).to(device)
+    pos_weight = torch.tensor(neg_count / pos_count, dtype=torch.float32).to(device)
     print(f"Calculated positive class weight for BCEWithLogistsLoss: {pos_weight.item():.2f}")
 
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     
     optimizer = None
     if dl_config['optimizer'] == 'Adam':
-        optimizer = optim.Adam(model_parameters(), lr=dl_config['learning_rate'])
+        optimizer = optim.Adam(model.parameters(), lr=dl_config['learning_rate'])
     elif dl_config['optimizer'] ==  'SGD':
-        optimizer = optim.SGD(model_parameters(), lr=dl_config['learning_rate'])
+        optimizer = optim.SGD(model.parameters(), lr=dl_config['learning_rate'])
     else:
         raise ValueError(f"Unknown optimizer: {dl_config['optimizer']}")
 
@@ -168,7 +168,7 @@ def train_deeL_model(
                 
                 # convert logits to proba
                 probabilities = torch.sigmoid(outputs)
-                predictions = (probabilities > 0,5).float()
+                predictions = (probabilities > 0.5).float()
                 
                 all_preds.extend(predictions.cpu().numpy())
                 all_labels.extend(labels.cpu().numpy())

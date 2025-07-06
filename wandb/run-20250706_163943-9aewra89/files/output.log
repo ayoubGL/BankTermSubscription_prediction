@@ -1,0 +1,11 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/9aewra89
+Traceback (most recent call last):
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 78, in <module>
+    main()
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 65, in main
+    trained_pipeline = train_classical_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/classical_models.py", line 65, in train_classical_model
+    classifier = SVC(random_state=42, probability=True, **model_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sklearn.svm._classes.SVC() got multiple values for keyword argument 'probability'

@@ -1,0 +1,26 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/4lnrog3r
+--- Selected Random Forest Classifier.
+--- Training RandomForestClassifier ...
+--- RandomForestClassifier training complete.
+
+ -- Evaluaton of RandomForestClassifier
+Accuracy: 0.8825
+Precision: 0.4880
+Recall: 0.8750
+F1-score: 0.6265
+ROC AUC: 0.9468
+\Classification  Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.88      0.93      7310
+           1       0.49      0.88      0.63       928
+
+    accuracy                           0.88      8238
+   macro avg       0.74      0.88      0.78      8238
+weighted avg       0.93      0.88      0.90      8238
+
+Logging plots to Weights & Biases...
+Logging metrics to Weight & Biases ...
+--- Model pipeline save locally to: models/classical/randomforestclassifier_pipeline.joblib
+Logged artifact: RandomForestClassifier_Pipeline (models/classical/randomforestclassifier_pipeline.joblib)
+Finishing W&B run...

@@ -1,0 +1,48 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/4gja08rc
+--- Selected Logistic Regression.
+--- Training LogisticRegression ...
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/utils/_indexing.py", line 341, in _get_column_indices
+    all_columns = X.columns
+                  ^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'columns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 78, in <module>
+    main()
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 65, in main
+    trained_pipeline = train_classical_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/classical_models.py", line 82, in train_classical_model
+    model_pipeline.fit(X_train, y_train)
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/pipeline.py", line 654, in fit
+    Xt = self._fit(X, y, routed_params, raw_params=params)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/pipeline.py", line 588, in _fit
+    X, fitted_transformer = fit_transform_one_cached(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/joblib/memory.py", line 326, in __call__
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/pipeline.py", line 1551, in _fit_transform_one
+    res = transformer.fit_transform(X, y, **params.get("fit_transform", {}))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/utils/_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/base.py", line 1389, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/compose/_column_transformer.py", line 993, in fit_transform
+    self._validate_column_callables(X)
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/compose/_column_transformer.py", line 552, in _validate_column_callables
+    transformer_to_input_indices[name] = _get_column_indices(X, columns)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/sklearn/utils/_indexing.py", line 343, in _get_column_indices
+    raise ValueError(
+ValueError: Specifying the columns using strings is only supported for dataframes.

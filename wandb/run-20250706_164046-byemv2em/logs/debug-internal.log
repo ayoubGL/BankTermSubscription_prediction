@@ -1,0 +1,13 @@
+{"time":"2025-07-06T16:40:46.362767+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-07-06T16:40:46.713317+02:00","level":"INFO","msg":"stream: created new stream","id":"byemv2em"}
+{"time":"2025-07-06T16:40:46.713377+02:00","level":"INFO","msg":"stream: started","id":"byemv2em"}
+{"time":"2025-07-06T16:40:46.713391+02:00","level":"INFO","msg":"handler: started","stream_id":"byemv2em"}
+{"time":"2025-07-06T16:40:46.713398+02:00","level":"INFO","msg":"sender: started","stream_id":"byemv2em"}
+{"time":"2025-07-06T16:40:46.713432+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"byemv2em"}
+{"time":"2025-07-06T16:51:14.391438+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact SVC_Pipeline","runtime_seconds":1.008832125,"subtasks":[{"desc":"svc_pipeline.joblib","runtime_seconds":0.34113375,"progress":"1.1MB/7.6MB"}]}],"total_operations":1}}
+{"time":"2025-07-06T16:51:16.361777+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-06T16:51:16.638981+02:00","level":"INFO","msg":"stream: closing","id":"byemv2em"}
+{"time":"2025-07-06T16:51:16.639014+02:00","level":"INFO","msg":"handler: closed","stream_id":"byemv2em"}
+{"time":"2025-07-06T16:51:16.639045+02:00","level":"INFO","msg":"sender: closed","stream_id":"byemv2em"}
+{"time":"2025-07-06T16:51:16.639032+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"byemv2em"}
+{"time":"2025-07-06T16:51:16.639326+02:00","level":"INFO","msg":"stream: closed","id":"byemv2em"}

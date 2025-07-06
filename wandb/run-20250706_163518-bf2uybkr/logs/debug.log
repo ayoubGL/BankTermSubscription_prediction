@@ -1,0 +1,28 @@
+2025-07-06 16:35:18,814 INFO    MainThread:37787 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_setup.py:_flush():80] Configure stats pid to 37787
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_setup.py:_flush():80] Loading settings from /Users/ayoub/.config/wandb/settings
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_setup.py:_flush():80] Loading settings from /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/wandb/settings
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/wandb/run-20250706_163518-bf2uybkr/logs/debug.log
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/wandb/run-20250706_163518-bf2uybkr/logs/debug-internal.log
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_init.py:init():830] calling init triggers
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'model_type': 'LogisticRegression', 'solver': 'liblinear', 'penalty': 'l1', 'C': 0.1, 'max_iter': 1000, 'class_weight': 'balanced', '_wandb': {}}
+2025-07-06 16:35:18,815 INFO    MainThread:37787 [wandb_init.py:init():871] starting backend
+2025-07-06 16:35:19,070 INFO    MainThread:37787 [wandb_init.py:init():874] sending inform_init request
+2025-07-06 16:35:19,136 INFO    MainThread:37787 [wandb_init.py:init():882] backend started and connected
+2025-07-06 16:35:19,140 INFO    MainThread:37787 [wandb_init.py:init():953] updated telemetry
+2025-07-06 16:35:19,219 INFO    MainThread:37787 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-07-06 16:35:20,050 INFO    MainThread:37787 [wandb_init.py:init():1029] starting run threads in backend
+2025-07-06 16:35:20,206 INFO    MainThread:37787 [wandb_run.py:_console_start():2458] atexit reg
+2025-07-06 16:35:20,207 INFO    MainThread:37787 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-07-06 16:35:20,207 INFO    MainThread:37787 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2025-07-06 16:35:20,207 INFO    MainThread:37787 [wandb_run.py:_redirect():2398] Redirects installed.
+2025-07-06 16:35:20,211 INFO    MainThread:37787 [wandb_init.py:init():1075] run started, returning control to user process
+2025-07-06 16:36:09,325 INFO    MainThread:37787 [wandb_run.py:_finish():2224] finishing run ayoubelma549/Bank-Marketing-M-Comparison/bf2uybkr
+2025-07-06 16:36:09,328 INFO    MainThread:37787 [wandb_run.py:_atexit_cleanup():2423] got exitcode: 0
+2025-07-06 16:36:09,328 INFO    MainThread:37787 [wandb_run.py:_restore():2405] restore
+2025-07-06 16:36:09,330 INFO    MainThread:37787 [wandb_run.py:_restore():2411] restore done
+2025-07-06 16:36:12,428 INFO    MainThread:37787 [wandb_run.py:_footer_history_summary_info():3903] rendering history
+2025-07-06 16:36:12,429 INFO    MainThread:37787 [wandb_run.py:_footer_history_summary_info():3935] rendering summary
+2025-07-06 16:36:12,430 INFO    MainThread:37787 [wandb_run.py:_footer_sync_info():3864] logging synced files

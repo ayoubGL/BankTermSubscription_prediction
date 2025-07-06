@@ -1,0 +1,45 @@
+# Global project settings 
+project_name : "Bank-Marketing-M-Comparison"
+random_state: 42
+test_size: 0.2
+numerical_scaler_type: "standard"
+apply_smote: True
+
+
+# Hyperparameters for classical ML models
+classical_models:
+  LogisticRegression:
+    solver: 'liblinear'
+    penalty: 'l1'
+    C: 0.1
+    max_iter: 1000
+    class_weight: 'balanced'
+  
+  SVC: 
+    kernel: 'rbf'
+    C: 1.0
+    gamma: 'scale'
+    probability: True
+    class_weight: 'balanced'
+  
+  RandomForestClassifier:
+    n_estimators: 200
+    max_depth: 10
+    min_samples_split: 5
+    min_samples_leaf: 3
+    class_weight: 'balanced'
+
+
+deep_learning_model:
+  input_dim: null
+  hidden_layers: [128, 64, 32]
+  dropout_rates: 0.3
+  num_epochs: 50
+  batch_size: 64
+  learning_rate: 0.001
+  optimizer: 'Adam'
+  loss_function: 'BCEWithLogitsLoss'
+  early_stopping_patience: 10
+  class_weights_dl: [1.0, 8.0]
+
+

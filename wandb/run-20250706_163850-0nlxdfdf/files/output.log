@@ -1,0 +1,26 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/0nlxdfdf
+--- Selected Logistic Regression.
+--- Training LogisticRegression ...
+--- LogisticRegression training complete.
+
+ -- Evaluaton of LogisticRegression
+Accuracy: 0.8696
+Precision: 0.4602
+Recall: 0.9106
+F1-score: 0.6114
+ROC AUC: 0.9438
+\Classification  Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.86      0.92      7310
+           1       0.46      0.91      0.61       928
+
+    accuracy                           0.87      8238
+   macro avg       0.72      0.89      0.77      8238
+weighted avg       0.93      0.87      0.89      8238
+
+Logging plots to Weights & Biases...
+Logging metrics to Weight & Biases ...
+--- Model pipeline save locally to: models/classical/logisticregression_pipeline.joblib
+Logged artifact: LogisticRegression_Pipeline (models/classical/logisticregression_pipeline.joblib)
+Finishing W&B run...

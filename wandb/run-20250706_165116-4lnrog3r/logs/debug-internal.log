@@ -1,0 +1,13 @@
+{"time":"2025-07-06T16:51:16.666841+02:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-07-06T16:51:17.024997+02:00","level":"INFO","msg":"stream: created new stream","id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:17.025061+02:00","level":"INFO","msg":"stream: started","id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:17.025119+02:00","level":"INFO","msg":"sender: started","stream_id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:17.025127+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:17.025239+02:00","level":"INFO","msg":"handler: started","stream_id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:36.74734+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact RandomForestClassifier_Pipeline","runtime_seconds":1.0463348749999999,"subtasks":[{"desc":"randomforestclassifier_pipeline.joblib","runtime_seconds":0.324492375,"progress":"448.0KB/11.0MB"}]}],"total_operations":1}}
+{"time":"2025-07-06T16:51:40.402317+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-06T16:51:40.700782+02:00","level":"INFO","msg":"stream: closing","id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:40.700817+02:00","level":"INFO","msg":"handler: closed","stream_id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:40.700887+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:40.701472+02:00","level":"INFO","msg":"sender: closed","stream_id":"4lnrog3r"}
+{"time":"2025-07-06T16:51:40.701527+02:00","level":"INFO","msg":"stream: closed","id":"4lnrog3r"}

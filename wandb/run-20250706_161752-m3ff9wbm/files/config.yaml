@@ -1,0 +1,63 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            6mtt9py8o8h12pa4wkqw8esqa7cyzsfs:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 8
+                    memoryGb: 16
+                    name: Unknown
+                    pcpuCores: 4
+                    ramTotalBytes: "17179869184"
+                    swapTotalBytes: "5368709120"
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "466352685056"
+                email: ayoubelma549@gmail.com
+                executable: /opt/anaconda3/envs/myven/bin/python
+                git:
+                    commit: 0b87c6a758825e31d4bf7fdf44d820c42cc1f17d
+                    remote: https://github.com/ayoubGL/BankTermSubscription_prediction.git
+                host: fvfgh3kyq05p.klientdrift.uib.no
+                memory:
+                    total: "17179869184"
+                os: macOS-15.3.1-x86_64-i386-64bit
+                program: /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py
+                python: CPython 3.11.13
+                root: /Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction
+                startedAt: "2025-07-06T14:17:52.111330Z"
+                writerId: 6mtt9py8o8h12pa4wkqw8esqa7cyzsfs
+        m: []
+        python_version: 3.11.13
+        t:
+            "1":
+                - 5
+                - 53
+            "2":
+                - 5
+                - 53
+            "3":
+                - 13
+                - 16
+            "4": 3.11.13
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": darwin-x86_64
+C:
+    value: 0.1
+class_weight:
+    value: balanced
+max_iter:
+    value: 1000
+model_type:
+    value: LogisticRegression
+penalty:
+    value: l1
+solver:
+    value: liblinear

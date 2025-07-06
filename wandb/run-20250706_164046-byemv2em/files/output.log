@@ -1,0 +1,26 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/byemv2em
+--- Selected Support Vector Classifier (SVC).
+--- Training SVC ...
+--- SVC training complete.
+
+ -- Evaluaton of SVC
+Accuracy: 0.8706
+Precision: 0.4616
+Recall: 0.8933
+F1-score: 0.6087
+ROC AUC: 0.9422
+\Classification  Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.87      0.92      7310
+           1       0.46      0.89      0.61       928
+
+    accuracy                           0.87      8238
+   macro avg       0.72      0.88      0.77      8238
+weighted avg       0.93      0.87      0.89      8238
+
+Logging plots to Weights & Biases...
+Logging metrics to Weight & Biases ...
+--- Model pipeline save locally to: models/classical/svc_pipeline.joblib
+Logged artifact: SVC_Pipeline (models/classical/svc_pipeline.joblib)
+Finishing W&B run...

@@ -1,0 +1,46 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/ol0xuyru
+--- Selected Logistic Regression.
+--- Training LogisticRegression ...
+--- LogisticRegression training complete.
+
+ -- Evaluaton of LogisticRegression
+Accuracy: 0.8696
+Precision: 0.4602
+Recall: 0.9106
+F1-score: 0.6114
+ROC AUC: 0.9438
+\Classification  Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.86      0.92      7310
+           1       0.46      0.91      0.61       928
+
+    accuracy                           0.87      8238
+   macro avg       0.72      0.89      0.77      8238
+weighted avg       0.93      0.87      0.89      8238
+Traceback (most recent call last):
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 78, in <module>
+    main()
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 65, in main
+    trained_pipeline = train_classical_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/classical_models.py", line 90, in train_classical_model
+    metrics = evaluate_classification_model(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/evaluation.py", line 70, in evaluate_classification_model
+    fig_roc, ax_roc = plt.subplot(figsize=(7,7))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/matplotlib/pyplot.py", line 1564, in subplot
+    ax = fig.add_subplot(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/matplotlib/figure.py", line 768, in add_subplot
+    ax = projection_class(self, *args, **pkw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 746, in __init__
+    self._internal_update(kwargs)
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/matplotlib/artist.py", line 1233, in _internal_update
+    return self._update_props(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/myven/lib/python3.11/site-packages/matplotlib/artist.py", line 1206, in _update_props
+    raise AttributeError(
+AttributeError: Axes.set() got an unexpected keyword argument 'figsize'

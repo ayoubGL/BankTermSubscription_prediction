@@ -9,12 +9,12 @@ import os
 
 
 from src.evaluation import evaluate_classification_model
-from wandb_utils import log_wandb_metrics, log_wandb_artifact, initialize_wandb_run, finish_wandb_run
+from src.wandb_utils import log_wandb_metrics, log_wandb_artifact, initialize_wandb_run, finish_wandb_run
 
 
 def train_classical_model(
     model_name: str,
-    X_train: np.ndarray,
+    X_train: np.ndarray, 
     y_train: np.ndarray,
     X_test: np.ndarray,
     y_test: np.ndarray,
@@ -61,8 +61,8 @@ def train_classical_model(
     if model_name == "LogisticRegression":
         classifier = LogisticRegression(random_state=42, **model_params)
         print("--- Selected Logistic Regression.")
-    elif model_name == "SVD":
-        classifier = SVC(random_state=42, probability=True, **model_params)
+    elif model_name == "SVC":
+        classifier = SVC(random_state=42,  **model_params)
         print("--- Selected Support Vector Classifier (SVC).")
     elif model_name == "RandomForestClassifier":
         classifier = RandomForestClassifier(random_state=42, **model_params)
@@ -73,11 +73,11 @@ def train_classical_model(
     
     # Combine preprocess and classifier into a single pipeline
     model_pipeline = Pipeline(steps=[
-        ('preprocess', preprocessor),
+        # ('preprocess', preprocessor),
         ('classifier', classifier)
     ])
     
-    
+   
     print(f"--- Training {model_name} ...")
     model_pipeline.fit(X_train, y_train)
     print(f"--- {model_name} training complete.")
@@ -92,7 +92,7 @@ def train_classical_model(
         y_pred = y_pred,
         y_proba = y_proba,
         model_name = model_name,
-        plot_results = True,
+        plot_result = True,
         wandb_log = True
     )
     

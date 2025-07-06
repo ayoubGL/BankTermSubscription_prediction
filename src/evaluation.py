@@ -57,7 +57,7 @@ def evaluate_classification_model(
         
         if plot_result:
             # Confusion matrix
-            cm = confusion_matrix(y_ture, y_pred)
+            cm = confusion_matrix(y_true, y_pred)
             fig_cm, ax_cm = plt.subplots(figsize=(6,6))
             disp_cm = ConfusionMatrixDisplay(confusion_matrix=cm,
                                              display_labels = ['No Deposit', 'Deposit'])
@@ -67,9 +67,9 @@ def evaluate_classification_model(
             plt.show()
             
             # ROC Curve
-            fig_roc, ax_roc = plt.subplot(figsize=(7,7))
+            fig_roc, ax_roc = plt.subplots(figsize=(7,7))
             RocCurveDisplay.from_predictions(y_true, y_proba, ax=ax_roc, name=model_name)
-            ax_roc.plot([0,1], [0,1], linestyle='--', lw=2. color='r', label='Random Classifier')
+            ax_roc.plot([0,1], [0,1], linestyle='--', lw=2, color='r', label='Random Classifier')
             ax_roc.set_title(f'{model_name} - ROC Curve')
             ax_roc.legend()
             plt.tight_layout()

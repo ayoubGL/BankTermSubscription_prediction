@@ -1,0 +1,14 @@
+W&B run initialized. View at: https://wandb.ai/ayoubelma549/Bank-Marketing-M-Comparison/runs/p7buglz3
+--- Selected Logistic Regression.
+--- Training LogisticRegression ...
+--- LogisticRegression training complete.
+Traceback (most recent call last):
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 78, in <module>
+    main()
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/main.py", line 65, in main
+    trained_pipeline = train_classical_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayoub/Desktop/PhDCourses/courses/ML_classifier/BankTermPrediction/src/classical_models.py", line 90, in train_classical_model
+    metrics = evaluate_classification_model(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: evaluate_classification_model() got an unexpected keyword argument 'plot_results'

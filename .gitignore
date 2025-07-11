@@ -4,3 +4,5 @@ models/*
 *.log
 *.png
 wandb/*
+__pycache__/*
+*.pyc

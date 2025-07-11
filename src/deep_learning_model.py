@@ -256,7 +256,7 @@ def train_deeL_model(
         y_pred=final_preds,
         y_proba=final_probas,
         model_name="DeepLearningNN_Test",
-        plot_results=True, # Show plots for final evaluation
+        plot_result=True, # Show plots for final evaluation
         wandb_log=True     # Log plots to W&B
     )
     

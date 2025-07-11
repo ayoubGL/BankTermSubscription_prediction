@@ -53,7 +53,7 @@ def main():
         test_size=test_size,
         random_state=random_state,
         apply_smote=apply_smote_classical,
-        smote_sampling_strategy='auto',
+        smote_sampling_strategy=True,
         numerical_scaler_type=numerical_scaler_type
     )
     
@@ -65,12 +65,11 @@ def main():
     ## Data for Deep Learning Model (no SMOTE, rely on class weights in loss function)
     # We will use the processed numpy array for PyTorch
     print("\n Preparing data for Deep learning Model (without SMOTE, using class weights) ")
-    X_train_dl, X_test_dl, y_train_dl, y_test_dl,\
-        full_pipeline_dl, feature_name_dl = get_processed_data(
+    X_train_dl, X_test_dl, y_train_dl, y_test_dl, full_pipeline_dl, feature_name_dl = get_processed_data(
             file_path='data/bank-additional-full.csv',
             test_size=test_size,
             random_state=random_state,
-            apply_smote=False,
+            apply_smote='auto',
             numerical_scaler_type=numerical_scaler_type
         )
     # Ensure input_dim for DL model is correct
@@ -106,14 +105,15 @@ def main():
     dl_config = config['deep_learning_model']
     
     trained_dl_model = train_deeL_model(
-        X_train = X_train_dl,
+        X_Train = X_train_dl,
         y_train = y_train_dl, 
-        X_test = X_test_dl,
+        X_Test = X_test_dl,
         y_test= y_test_dl,
         dl_config=dl_config,
         wandb_project_name=project_name,
         device=device,
     )
+    
     
     print("Finished training and evaluation Deep Learning Model")
     
@@ -125,7 +125,7 @@ def main():
     
     # Ensure any lingering W&B runs are finished
     finish_wandb_run()
-    print("\n--- Project Execution compelte ---")
+    print("\n--- Project Execution complete ---")
     
 if __name__ == "__main__":
     main()

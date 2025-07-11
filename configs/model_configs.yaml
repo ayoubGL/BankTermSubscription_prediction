@@ -1,5 +1,5 @@
 # Global project settings 
-project_name : "Bank-Marketing-M-Comparison"
+project_name : "Bank-Marketing-ML-Comparison"
 random_state: 42
 test_size: 0.2
 numerical_scaler_type: "standard"
@@ -15,12 +15,12 @@ classical_models:
     max_iter: 1000
     class_weight: 'balanced'
   
-  SVC: 
-    kernel: 'rbf'
-    C: 1.0
-    gamma: 'scale'
-    probability: True
-    class_weight: 'balanced'
+  # SVC: 
+  #   kernel: 'rbf'
+  #   C: 1.0
+  #   gamma: 'scale'
+  #   probability: True
+  #   class_weight: 'balanced'
   
   RandomForestClassifier:
     n_estimators: 200
@@ -33,7 +33,7 @@ classical_models:
 deep_learning_model:
   input_dim: null
   hidden_layers: [128, 64, 32]
-  dropout_rates: 0.3
+  dropout_rate: 0.3
   num_epochs: 50
   batch_size: 64
   learning_rate: 0.001

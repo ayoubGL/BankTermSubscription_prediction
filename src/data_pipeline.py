@@ -178,9 +178,9 @@ def get_processed_data(file_path: str = '../data/bank-additional-full.csv',
             print("SMOTE not applied")
             full_pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
             # Fit and transform training data
-            X_train_processed = full_pipeline.fit_transform(X_train, y_train)
+            X_train_processed, y_train_preprocessed = full_pipeline.fit_transform(X_train, y_train)
             # Transform test data
-            X_test_processed = full_pipeline.transform(X_test)
+            X_test_processed,y_test = full_pipeline.transform(X_test)
             
             
         

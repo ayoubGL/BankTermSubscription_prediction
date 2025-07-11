@@ -194,23 +194,23 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"Error during Random Forest test: {e}")
 
-    print("\n--- Running SVC Test (may be slow) ---")
-    try:
-        svc_pipeline = train_classical_model(
-            model_name='SVC',
-            X_train=X_train_dummy,
-            y_train=y_train_dummy,
-            X_test=X_test_dummy,
-            y_test=y_test_dummy,
-            preprocessor=preprocessor_dummy,
-            model_params={'kernel': 'linear', 'class_weight': 'balanced'},
-            run_name_suffix='dummy-test',
-            wandb_project_name="classical-models-test"
-        )
-        print(f"SVC pipeline trained: {svc_pipeline}")
-    except Exception as e:
-        print(f"Error during SVC test: {e}")
-        print("SVC can be very slow on larger datasets or with complex kernels. Consider reducing data size or using LinearSVC for large datasets.")
+    # print("\n--- Running SVC Test (may be slow) ---")
+    # # try:
+    # #     svc_pipeline = train_classical_model(
+    # #         model_name='SVC',
+    # #         X_train=X_train_dummy,
+    # #         y_train=y_train_dummy,
+    # #         X_test=X_test_dummy,
+    # #         y_test=y_test_dummy,
+    # #         preprocessor=preprocessor_dummy,
+    # #         model_params={'kernel': 'linear', 'class_weight': 'balanced'},
+    # #         run_name_suffix='dummy-test',
+    # #         wandb_project_name="classical-models-test"
+    # #     )
+    # #     print(f"SVC pipeline trained: {svc_pipeline}")
+    # except Exception as e:
+    #     print(f"Error during SVC test: {e}")
+    #     print("SVC can be very slow on larger datasets or with complex kernels. Consider reducing data size or using LinearSVC for large datasets.")
 
 
     

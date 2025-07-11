@@ -7,8 +7,8 @@ import os
 from datetime import datetime
 from tqdm import tqdm
 
-from evaluation import evaluate_classification_model
-from wandb_utils import initialize_wandb_run, log_wandb_artifact, log_wandb_metrics, finish_wandb_run
+from src.evaluation import evaluate_classification_model
+from src.wandb_utils import initialize_wandb_run, log_wandb_artifact, log_wandb_metrics, finish_wandb_run
 
 
 
@@ -97,7 +97,7 @@ def train_deeL_model(
     X_train_tensor = torch.tensor(X_Train, dtype=torch.float32).to(device)    
     y_train_tensor = torch.tensor(y_train, dtype=torch.float32).unsqueeze(1).to(device)
     X_test_tensor = torch.tensor(X_Test, dtype=torch.float32).to(device)
-    y_test_tensor = torch.tensor(y_test, dtype=torch.float32).unsqueeze(1).to(device)
+    y_test_tensor = torch.from_numpy(y_test.values.astype(np.float32)).unsqueeze(1).to(device)
     
     # Create TensorDataset and DataLoaders
     train_dataset = TensorDataset(X_train_tensor, y_train_tensor)
